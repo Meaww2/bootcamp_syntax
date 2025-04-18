@@ -1,11 +1,12 @@
+# frozen_string_literal: true
 # test_my_functions.rb
 
 require 'minitest/autorun'
-require_relative 'broken_functions'
+require_relative 'broken_function'
 
 class TestMyFunctions < Minitest::Test
   def setup
-    @bf = BrokenFunctions.new
+    @functions = BrokenFunctions.new
   end
 
   def test_odd_even
